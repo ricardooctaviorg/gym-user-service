@@ -8,9 +8,7 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 @SpringBootApplication
 @EnableEurekaClient
 
-@EntityScan({ "com.rorg.gym.commons.domain.user"
-	, "com.rorg.gym.commons.domain.account"
-	, "com.rorg.gym.commons.domain.core.rolePolicy" })
+@EntityScan({ "com.rorg.gym.commons.domain"})
 public class GymUserServiceApplication {
 
 	public static void main(String[] args) {

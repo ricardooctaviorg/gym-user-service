@@ -8,6 +8,7 @@ import com.rorg.gym.commons.domain.user.User;
 @RepositoryRestResource(path="user")
 public interface IUserDAO extends JpaRepository<User, Long> {
 	
+	public User findByIdUser(Long idUser);
 	public User findByUserName(String userName);
 
 }
